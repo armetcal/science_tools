@@ -1,6 +1,7 @@
 // Assign default button values
 
-function do_onclick() {
+function do_onclick() 
+{
     var button1_value = 0;
     var button2_value = 0;
     var button3_value = 0;
@@ -15,13 +16,13 @@ function do_onclick() {
     'GGG','GGT','CAC','CAT','ATA','ATC','ATT','CTA','CTC','CTG','CTT','TTA',
     'TTG','AAA','AAG','ATG','TTC','TTT','CCA','CCC','CCG','CCT','AGC','AGT',
     'TCA','TCC','TCG','TCT','TAA','TAG','TGA','ACA','ACC','ACG','ACT','TGG',
-    'TAC','TAT','GTA','GTC','GTG','GTT']
+    'TAC','TAT','GTA','GTC','GTG','GTT'];
     var AA = ['Ala','Ala','Ala','Ala','Arg','Arg','Arg','Arg','Arg','Arg','Asn',
     'Asn','Asp','Asp','Cys','Cys','Gln','Gln','Glu','Glu','Gly','Gly','Gly',
     'Gly','His','His','Ile','Ile','Ile','Leu','Leu','Leu','Leu','Leu','Leu',
     'Lys','Lys','Met','Phe','Phe','Pro','Pro','Pro','Pro','Ser','Ser','Ser',
     'Ser','Ser','Ser','Stp','Stp','Stp','Thr','Thr','Thr','Thr','Trp','Tyr',
-    'Tyr','Val','Val','Val','Val']
+    'Tyr','Val','Val','Val','Val'];
     var array2D = new Array(2);
     array2D[0] = Codon;
     array2D[1] = AA;
@@ -33,8 +34,8 @@ function do_onclick() {
             temp.append(i);
         }
     }
-    console.log(temp);
+    //console.log(temp);
     //var myJsonString = JSON.stringify(temp);
-    //document.getElementById("myText").innerHTML = myJsonString;
+    document.getElementById("myText").innerHTML = temp;
 }
 
