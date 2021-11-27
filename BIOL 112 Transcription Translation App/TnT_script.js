@@ -275,3 +275,39 @@ function button_show_onclick(){
       clicked = 0;
     }
 }
+function button1_onclick(){
+    if(button1_value == 0 ) {
+      document.getElementById("answer1").innerHTML = template_strand;
+      button1_value = 1;
+    } else {
+      document.getElementById("answer1").innerHTML = "";
+      button1_value = 0;
+    }
+}
+function button2_onclick(){
+    if(button2_value == 0 ) {
+      document.getElementById("answer2").innerHTML = num_start;
+      button2_value = 1;
+    } else {
+      document.getElementById("answer2").innerHTML = "";
+      button2_value = 0;
+    }
+}
+function button3_onclick(){
+    if(button3_value == 0 ) {
+      document.getElementById("answer3").innerHTML = mrna_sequence;
+      button3_value = 1;
+    } else {
+      document.getElementById("answer3").innerHTML = "";
+      button3_value = 0;
+    }
+}
+function button4_onclick(){
+    if(button4_value == 0 ) {
+      document.getElementById("answer4").innerHTML = pep_out;
+      button4_value = 1;
+    } else {
+      document.getElementById("answer4").innerHTML = "";
+      button4_value = 0;
+    }
+}
