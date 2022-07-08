@@ -204,10 +204,12 @@ server <- function(input, output) {
     })
     
     output$print_plot1 <- renderPlot({
+        req(plot1())
         p = plot1()
         p
     }, height = 500, width = 800, res = 100)
     output$print_plot2 <- renderPlot({
+        req(plot2)
         p = plot2()
         p
     }, height = 500, width = 600, res = 100)
