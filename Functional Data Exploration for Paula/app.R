@@ -209,7 +209,7 @@ server <- function(input, output) {
         p
     }, height = 500, width = 800, res = 100)
     output$print_plot2 <- renderPlot({
-        req(plot2)
+        req(plot2())
         p = plot2()
         p
     }, height = 500, width = 600, res = 100)
